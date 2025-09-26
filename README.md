@@ -1,19 +1,37 @@
-# Getting Started
-Install the dependencies and run the project
-```
+# 🎲 Tenzies Game (React + Vite)
+
+A fun, responsive implementation of the classic Tenzies dice game built with **React** and **Vite**.  
+Part of my portfolio projects for YapiTech Innovations.
+
+## ✨ Features
+- 🎲 Roll dice until all are the same  
+- 🖱️ Click to hold dice between rolls  
+- 🎉 Confetti celebration on win  
+- 📱 Fully responsive design  
+
+## 🛠️ Tech Stack
+- React
+- Vite
+- CSS (custom styling)
+
+## 🚀 Live Demo
+[Play Tenzies here](https://marvelous-rabanadas-9f1670.netlify.app)  
+
+## 📸 Screenshot
+(Add a screenshot here once deployed)
+
+## 📂 Setup
+Clone the repo and install dependencies:
+```bash
+git clone https://github.com/yapisango/tenzies-extra.git
+cd tenzies-extra
 npm install
-npm start
-```
+npm run dev
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+👨‍💻 Author
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+Sango Mabhuti Yapi
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+https://www.linkedin.com/in/sango-yapi
 
-Happy Coding!
+https://github.com/yapisango

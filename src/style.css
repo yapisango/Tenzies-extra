@@ -62,7 +62,7 @@ h1 {
 .read-the-docs {
   color: #888;
 }
-
+/* 🌙 Base button styles (used globally) */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -74,14 +74,17 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* 🌞 Light mode */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -94,36 +97,52 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* 🎲 Dice grid */
 .dice-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1rem;
   justify-items: center;
-  margin: 20px auto;
-  max-width: 400px;
+  max-width: 600px; /* keeps it from stretching too wide */
+  margin: 0 auto; /* centers the grid */
 }
 
-button {
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
+
+/* 📱 On small screens, let dice shrink smaller */
+@media (max-width: 500px) {
+  .dice-container {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  }
+}
+
+@media (max-width: 350px) {
+  .dice-container {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  }
+}
+
+
+/* 🎲 Dice button styles (apply only to dice via class="die") */
+button.die {
+  width: 100%;
+  aspect-ratio: 1 / 1;  /* always square */
+  max-width: 100px;     /* cap size on big screens */
+  font-size: clamp(1rem, 2vw, 1.5rem);
   font-weight: bold;
   border-radius: 10px;
   border: 2px solid #333;
-  cursor: pointer;
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-button:hover {
-  transform: scale(1.1);
+button.die:hover {
+  transform: scale(1.05);
 }
 
-button[aria-pressed="true"] {
+button.die[aria-pressed="true"] {
   background-color: #59E391;
   color: white;
   border-color: #3ca76d;
 }
+
 

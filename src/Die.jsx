@@ -7,6 +7,7 @@ export default function Die(props) {
     
     return (
         <button 
+            className="die"  
             style={styles}
             onClick={props.hold}
             aria-pressed={props.isHeld}
@@ -16,3 +17,5 @@ export default function Die(props) {
         </button>
     )
 }
+
+
